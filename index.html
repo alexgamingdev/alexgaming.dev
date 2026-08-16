@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="de" id="html-root">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Alexander Dennhoven (alexgaming.dev) — Portfolio & Projekte</title>
+  <meta name="description" content="Portfolio von Alexander Dennhoven: Softwareentwicklung, Automation und Tools. Projekte wie arch-it und sweep-it sowie Socials & Kontakt." />
+  <link rel="canonical" href="https://alexgaming.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="alexgaming.dev" />
+  <meta property="og:title" content="Alexander Dennhoven — Portfolio & Projekte" />
+  <meta property="og:description" content="Softwareentwicklung, Automation und Tools. Projekte: arch-it & sweep-it. Socials & Kontakt auf einer Seite." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexgaming.dev/" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://alexgaming.dev/icons/og-main.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alexander Dennhoven — Portfolio & Projekte" />
+  <meta name="twitter:description" content="Softwareentwicklung, Automation und Tools. Projekte: arch-it & sweep-it. Socials & Kontakt auf einer Seite." />
+  <meta name="twitter:image" content="https://alexgaming.dev/icons/og-main.jpg" />
+
+  <!-- Schema.org (nur eine Person / eine Identität) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://alexgaming.dev/#person",
+    "name": "Alexander Dennhoven",
+    "url": "https://alexgaming.dev/",
+    "alternateName": [
+      "alexgamingdev"
+    ],
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://alexgaming.dev/icons/og-main.jpg",
+      "contentUrl": "https://alexgaming.dev/icons/og-main.jpg"
+    },
+    "jobTitle": "Software Developer & Architect",
+    "description": "Alexander Dennhoven (alexgamingdev) betreibt alexgaming.dev. Fokus: Softwareentwicklung, Automation und Tools. Projekte: arch-it und sweep-it.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://alexgaming.dev/"
+    },
+    "sameAs": [
+      "https://github.com/alexgamingdev",
+      "https://www.linkedin.com/in/alexgamingdev/",
+      "https://x.com/alexgamingdev",
+      "https://www.instagram.com/alexgaming.dev/",
+      "https://www.youtube.com/@alexgamingdev",
+      "https://www.twitch.tv/alexgamingdev"
+    ]
+  }
+  </script>
+
+  <style>
+    :root { color-scheme: light dark; }
+    @keyframes load { 0% { opacity: 0; transform: translateY(8px); } 100% { opacity: 1; transform: translateY(0); } }
+    body {
+      margin: 0; font-family: system-ui, sans-serif; line-height: 1.5;
+      background: rgba(0,0,0,0.02); color: rgba(0,0,0,.92);
+      animation: load 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 48px; }
+    header { display: flex; align-items: center; justify-content: space-between; padding-bottom: 20px; border-bottom: 1px solid rgba(0,0,0,.1); }
+    @media (prefers-color-scheme: dark) {
+      header { border-bottom-color: rgba(255,255,255,.14); }
+      body { background: rgba(255,255,255,.03); color: rgba(255,255,255,.92); }
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo { width: 46px; height: 46px; border-radius: 14px; background: rgba(0,0,0,.06); display: grid; place-items: center; overflow: hidden; }
+    .logo img { width: 100%; height: 100%; object-fit: cover; }
+    .lang-switcher {
+      display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.16); background: rgba(255,255,255,.5); cursor: pointer;
+      font-size: 13px; font-weight: 600; color: inherit;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease;
+    }
+    .lang-switcher:hover { background: rgba(0,0,0,0.06); transform: translateY(-2px) scale(1.02); }
+    @media (prefers-color-scheme: dark) {
+      .lang-switcher { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.18); }
+      .lang-switcher:hover { background: rgba(255,255,255,.08); }
+    }
+    .flag-icon { width: 18px; height: 13px; border-radius: 2px; object-fit: cover; }
+    .hero { padding: 26px 0 8px; }
+    h1 { margin: 0; font-size: clamp(28px, 4.2vw, 46px); }
+    .subtitle { margin: 10px 0 0; color: rgba(0,0,0,.68); }
+    @media (prefers-color-scheme: dark) { .subtitle { color: rgba(255,255,255,.72); } }
+    main { display:block; }
+    .grid { display: grid; gap: 16px; margin-top: 18px; grid-template-columns: 1fr; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } .grid .wide { grid-column: span 2; } }
+    section.card {
+      border: 1px solid rgba(0,0,0,.12); border-radius: 16px; padding: 18px;
+      background: rgba(255,255,255,.55);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    section.card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(0,0,0,0.07); }
+    @media (prefers-color-scheme: dark) {
+      section.card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.14); }
+      section.card:hover { box-shadow: 0 14px 32px rgba(0,0,0,0.28); }
+    }
+    h2 { margin: 0 0 10px; font-size: 18px; }
+    .muted { color: rgba(0,0,0,.68); }
+    @media (prefers-color-scheme: dark) { .muted { color: rgba(255,255,255,.72); } }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px; padding: 10px 12px; border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.16); text-decoration: none; color: inherit; background: rgba(255,255,255,.5);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease;
+    }
+    .btn:hover { background: rgba(0,0,0,0.06); transform: translateY(-2px) scale(1.02); }
+    @media (prefers-color-scheme: dark) {
+      .btn { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.18); }
+      .btn:hover { background: rgba(255,255,255,.08); }
+    }
+
+    .soc-icon{
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: inline-block;
+
+      /* invertiert (schwarz -> weiß) */
+      filter: invert(1) brightness(2) contrast(1.1);
+    }
+
+    /* Im hellen Theme NICHT invertieren */
+    @media (prefers-color-scheme: light) {
+      .soc-icon {
+        filter: none;
+      }
+    }
+
+    .soc-text{
+      display: inline-block;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .list { margin: 0; padding-left: 18px; }
+    footer { margin-top: 22px; color: rgba(0,0,0,.55); font-size: 13px; }
+    @media (prefers-color-scheme: dark) { footer { color: rgba(255,255,255,.62); } }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <img src="/icons/favicon.png" alt="alexgaming.dev" />
+        </div>
+        <div>
+          <div style="font-weight:700; font-size:14px;">alexgaming.dev</div>
+          <div style="color:rgba(0,0,0,.65); font-size:13px;">Alexander Dennhoven</div>
+        </div>
+      </div>
+
+      <button class="lang-switcher" onclick="toggleLang()" aria-label="Sprache wechseln">
+        <img id="flag" class="flag-icon" src="https://flagcdn.com/de.svg" alt="DE" />
+        <span id="langText">DE</span>
+      </button>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1 id="h-title">Alexander Dennhoven</h1>
+        <p class="subtitle" id="h-sub">Portfolio & Projekte. Socials & Kontakt auf einer Seite.</p>
+      </div>
+
+      <div class="grid">
+        <section class="card" aria-labelledby="p-title">
+          <h2 id="p-title">Profil</h2>
+          <p class="muted" id="p-desc">Alexander Dennhoven betreibt <strong>alexgaming.dev</strong>. Schwerpunkt: Softwareentwicklung, Automation und Tools.</p>
+        </section>
+
+        <section class="card" aria-labelledby="proj-title">
+          <h2 id="proj-title">Projekte</h2>
+          <p class="muted" id="proj-sub" style="margin-top:0;">Wichtige Tools & Projekte:</p>
+          <ul class="list">
+            <li><strong>arch-it</strong> — CLI Scaffolding <a href="https://github.com/alexgaming-dev/arch-it" target="_blank" rel="noopener">GitHub</a></li>
+            <li><strong>sweep-it</strong> — Cleaner Tool <a href="https://github.com/alexgaming-dev/sweep-it" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </section>
+
+        <section class="card wide" aria-labelledby="soc-title">
+          <h2 id="soc-title">Socials</h2>
+          <p class="muted" id="soc-sub" style="margin-top:0;">Offizielle Profile:</p>
+
+          <div class="btns">
+            <a class="btn" href="https://github.com/alexgamingdev" target="_blank" rel="noopener">
+              <img class="soc-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" />
+              <span class="soc-text">GitHub</span>
+            </a>
+
+            <a class="btn" href="https://www.linkedin.com/in/alexgamingdev/" target="_blank" rel="noopener">
+              <img class="soc-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" />
+              <span class="soc-text">LinkedIn</span>
+            </a>
+
+            <a class="btn" href="https://x.com/alexgamingdev" target="_blank" rel="noopener">
+              <img class="soc-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg" alt="X" />
+              <span class="soc-text">X</span>
+            </a>
+
+            <a class="btn" href="https://www.instagram.com/alexgaming.dev/" target="_blank" rel="noopener">
+              <img class="soc-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" />
+              <span class="soc-text">Instagram</span>
+            </a>
+
+            <a class="btn" href="https://www.youtube.com/@alexgamingdev" target="_blank" rel="noopener">
+              <img class="soc-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" alt="YouTube" />
+              <span class="soc-text">YouTube</span>
+            </a>
+
+            <a class="btn" href="https://www.twitch.tv/alexgamingdev" target="_blank" rel="noopener">
+              <img class="soc-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitch.svg" alt="Twitch" />
+              <span class="soc-text">Twitch</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="c-title">
+          <h2 id="c-title">Kontakt</h2>
+          <p class="muted" style="margin-top:0;">E-Mail: <a href="mailto:info@alexgaming.is-a.dev">info@alexgaming.is-a.dev</a></p>
+        </section>
+
+        <section class="card" aria-labelledby="n-title">
+          <h2 id="n-title">Hinweis</h2>
+          <p class="muted" id="n-desc" style="margin-top:0;">Alle Infos gebündelt auf dieser Startseite.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+	<div style="display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; justify-content:space-between;">
+		<div>© <span id="y"></span> alexgaming.dev</div>
+		<div style="display:flex; flex-wrap:wrap; gap:14px;">
+		<a href="/impressum" style="text-decoration:none; color:inherit;">Impressum</a>
+		<a href="/datenschutz" style="text-decoration:none; color:inherit;">Datenschutz</a>
+		</div>
+	</div>
+	</footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const t = {
+      de: {
+        sub: "Portfolio & Projekte. Socials & Kontakt auf einer Seite.",
+        pTitle: "Profil",
+        pDesc: "Alexander Dennhoven betreibt <strong>alexgaming.dev</strong>. Schwerpunkt: Softwareentwicklung, Automation und Tools.",
+        projTitle: "Projekte",
+        projSub: "Wichtige Tools & Projekte:",
+        socTitle: "Socials",
+        socSub: "Offizielle Profile:",
+        cTitle: "Kontakt",
+        nTitle: "Hinweis",
+        nDesc: "Alle Infos gebündelt auf dieser Startseite.",
+        lang: "DE",
+        flag: "https://flagcdn.com/de.svg"
+      },
+      en: {
+        sub: "Portfolio & Projects. Socials & Contact on one page.",
+        pTitle: "Profile",
+        pDesc: "Alexander Dennhoven runs <strong>alexgaming.dev</strong>. Focus: Software development, automation, and tools.",
+        projTitle: "Projects",
+        projSub: "Key tools & projects:",
+        socTitle: "Socials",
+        socSub: "Official profiles:",
+        cTitle: "Contact",
+        nTitle: "Notice",
+        nDesc: "All info bundled directly on this homepage.",
+        lang: "EN",
+        flag: "https://flagcdn.com/gb.svg"
+      }
+    };
+
+    let curr = "de";
+    function toggleLang() {
+      curr = curr === "de" ? "en" : "de";
+      document.getElementById("html-root").setAttribute("lang", curr);
+
+      const d = t[curr];
+      document.getElementById("h-sub").textContent = d.sub;
+      document.getElementById("p-title").textContent = d.pTitle;
+      document.getElementById("p-desc").innerHTML = d.pDesc;
+      document.getElementById("proj-title").textContent = d.projTitle;
+      document.getElementById("proj-sub").textContent = d.projSub;
+      document.getElementById("soc-title").textContent = d.socTitle;
+      document.getElementById("soc-sub").textContent = d.socSub;
+      document.getElementById("c-title").textContent = d.cTitle;
+      document.getElementById("n-title").textContent = d.nTitle;
+      document.getElementById("n-desc").textContent = d.nDesc;
+
+      document.getElementById("langText").textContent = d.lang;
+      document.getElementById("flag").src = d.flag;
+    }
+  </script>
+</body>
+</html>

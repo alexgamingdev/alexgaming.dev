@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impressum — alexgaming.dev</title>
+  <meta name="description" content="Impressum von alexgaming.dev." />
+  <link rel="canonical" href="https://alexgaming.dev/impressum" />
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6;
+      background: rgba(0,0,0,0.02); color: rgba(0,0,0,.92); }
+    @media (prefers-color-scheme: dark) { body { background: rgba(255,255,255,.03); color: rgba(255,255,255,.92); } }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 48px; }
+    header { padding-bottom: 18px; border-bottom: 1px solid rgba(0,0,0,.1); margin-bottom: 18px; }
+    @media (prefers-color-scheme: dark) { header { border-bottom-color: rgba(255,255,255,.14); } }
+    h1 { margin: 0 0 10px; font-size: clamp(24px, 3.4vw, 36px); }
+    h2 { margin: 18px 0 8px; font-size: 18px; }
+    p { margin: 8px 0; }
+    a { color: inherit; }
+    .card { border: 1px solid rgba(0,0,0,.12); border-radius: 16px; padding: 18px; background: rgba(255,255,255,.55); }
+    @media (prefers-color-scheme: dark) { .card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.14); } }
+    footer { margin-top: 22px; color: rgba(0,0,0,.55); font-size: 13px; }
+    @media (prefers-color-scheme: dark) { footer { color: rgba(255,255,255,.62); } }
+    .muted { color: rgba(0,0,0,.68); }
+    @media (prefers-color-scheme: dark) { .muted { color: rgba(255,255,255,.72); } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Impressum</h1>
+      <p class="muted">Angaben gemäß § 5 DDG</p>
+    </header>
+
+    <main class="card">
+      <h2>Angaben</h2>
+      <p><strong>Alexander Dennhoven</strong></p>
+      <p>Froitscheidterstraße 19, 52385 Nideggen</p>
+      <p>TEL: +49 176 66381193</p>
+      <p>MAIL: <a href="mailto:info@alexgaming.is-a.dev">info@alexgaming.is-a.dev</a></p>
+
+      <h2>Verantwortlich nach § 18 Abs. 2 MStV</h2>
+      <p>Alexander Dennhoven</p>
+      <p>Froitscheidterstraße 19, 52385 Nideggen</p>
+    </main>
+
+    <footer>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; justify-content:space-between;">
+        <div>© <span id="y"></span> alexgaming.dev</div>
+        <div style="display:flex; flex-wrap:wrap; gap:14px;">
+          <a href="/impressum" style="text-decoration:none; color:inherit;">Impressum</a>
+          <a href="/datenschutz" style="text-decoration:none; color:inherit;">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
